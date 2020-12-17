@@ -1,0 +1,22 @@
+{
+  "name": "kb2abot-doc",
+  "version": "1.0.0",
+  "description": "kb2abot documents",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "start": "jsdoc C:/Users/khoakomlem/Desktop/kb2abot/main -c jsdoc.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kb2abot/kb2abot-doc.git"
+  },
+  "author": "khoakomlem",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kb2abot/kb2abot-doc/issues"
+  },
+  "homepage": "https://github.com/kb2abot/kb2abot-doc#readme"
+}

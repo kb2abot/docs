@@ -234,12 +234,14 @@ const parseBool = str => {
  * })
  * // {kb2abot: true}
  */
-const parseJSON = async text => {
-	try {
-		return JSON.parse(text);
-	} catch (e) {
-		throw e;
-	}
+const parseJSON = text => {
+	return new Promise((resolve, reject) => {
+		try {
+			resolve(JSON.parse(text));
+		} catch (e) {
+			reject(e);
+		}
+	});
 };
 /**
  * Xóa 1 file theo đường dẫn
@@ -248,12 +250,15 @@ const parseJSON = async text => {
  * kb2abot.utils.deleteFile(__dirname + "/test.txt");
  * // *File test.txt sẽ bị xóa*
  */
-const deleteFile = async path => {
-	try {
-		fs.unlinkSync(path);
-	} catch (e) {
-		throw e;
-	}
+const deleteFile = path => {
+	return new Promise((resolve, reject) => {
+		try {
+			fs.unlinkSync(path);
+			resolve();
+		} catch (e) {
+			reject(e);
+		}
+	});
 };
 /**
  * Lấy giá trị trong minimist arguments (Dùng chung với hàm parseArg)
