@@ -1,0 +1,2937 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+      COMMON - Documentation
+  </title>
+
+  <link href="https://www.braintreepayments.com/images/favicon-ccda0b14.png" rel="icon" type="image/png">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+  <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+  <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+  
+  <link type="text/css" rel="stylesheet" href="styles/collapse.css">
+  
+
+  
+
+  <!-- start Mixpanel -->
+  <script type="text/javascript">(function(e,a){if(!a.__SV){var b=window;try{var c,l,i,j=b.location,g=j.hash;c=function(a,b){return(l=a.match(RegExp(b+"=([^&]*)")))?l[1]:null};g&&c(g,"state")&&(i=JSON.parse(decodeURIComponent(c(g,"state"))),"mpeditor"===i.action&&(b.sessionStorage.setItem("_mpcehash",g),history.replaceState(i.desiredHash||"",e.title,j.pathname+j.search)))}catch(m){}var k,h;window.mixpanel=a;a._i=[];a.init=function(b,c,f){function e(b,a){var c=a.split(".");2==c.length&&(b=b[c[0]],a=c[1]);b[a]=function(){b.push([a].concat(Array.prototype.slice.call(arguments,
+  0)))}}var d=a;"undefined"!==typeof f?d=a[f]=[]:f="mixpanel";d.people=d.people||[];d.toString=function(b){var a="mixpanel";"mixpanel"!==f&&(a+="."+f);b||(a+=" (stub)");return a};d.people.toString=function(){return d.toString(1)+".people (stub)"};k="disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config reset people.set people.set_once people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
+  for(h=0;h<k.length;h++)e(d,k[h]);a._i.push([b,c,f])};a.__SV=1.2;b=e.createElement("script");b.type="text/javascript";b.async=!0;b.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?MIXPANEL_CUSTOM_LIB_URL:"file:"===e.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";c=e.getElementsByTagName("script")[0];c.parentNode.insertBefore(b,c)}})(document,window.mixpanel||[]);
+  mixpanel.init("1919205b2da72e4da3b9b6639b444d59");</script>
+  <!-- end Mixpanel -->
+</head>
+
+<body>
+  <svg style="display: none;">
+    <defs>
+      <symbol id="linkIcon" fill="#706d77" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 0h24v24H0z" fill="none"/>
+          <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/>
+      </symbol>
+    </defs>
+  </svg>
+
+  <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+  <label for="nav-trigger" class="navicon-button x">
+    <div class="navicon"></div>
+  </label>
+
+  <label for="nav-trigger" class="overlay"></label>
+
+  <div class="top-nav-wrapper">
+    <ul>
+      <li >
+        <a href="index.html">
+          
+            <svg fill="#6D6D6D" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+              <path d="M0 0h24v24H0z" fill="none"/>
+            </svg>
+          
+          
+        </a>
+      </li>
+
+      
+
+    </ul>
+  </div>
+
+  <nav>
+    <h3 class="reference-title">
+      KB2A BOT
+    </h3>
+
+    
+
+    <h3>Modules</h3><ul><li id="COMMON-nav"><a href="module-COMMON.html">COMMON</a><ul class='methods'><li data-type="method" id="COMMON-apiErrorHandler-nav"><a href="module-COMMON.html#~apiErrorHandler">apiErrorHandler</a></li><li data-type="method" id="COMMON-asyncWait-nav"><a href="module-COMMON.html#~asyncWait">asyncWait</a></li><li data-type="method" id="COMMON-currencyFormat-nav"><a href="module-COMMON.html#~currencyFormat">currencyFormat</a></li><li data-type="method" id="COMMON-deleteFile-nav"><a href="module-COMMON.html#~deleteFile">deleteFile</a></li><li data-type="method" id="COMMON-extend-nav"><a href="module-COMMON.html#~extend">extend</a></li><li data-type="method" id="COMMON-getFileSize-nav"><a href="module-COMMON.html#~getFileSize">getFileSize</a></li><li data-type="method" id="COMMON-getKeyword-nav"><a href="module-COMMON.html#~getKeyword">getKeyword</a></li><li data-type="method" id="COMMON-numbersToWords-nav"><a href="module-COMMON.html#~numbersToWords">numbersToWords</a></li><li data-type="method" id="COMMON-parseArg-nav"><a href="module-COMMON.html#~parseArg">parseArg</a></li><li data-type="method" id="COMMON-parseBool-nav"><a href="module-COMMON.html#~parseBool">parseBool</a></li><li data-type="method" id="COMMON-parseJSON-nav"><a href="module-COMMON.html#~parseJSON">parseJSON</a></li><li data-type="method" id="COMMON-parseValue-nav"><a href="module-COMMON.html#~parseValue">parseValue</a></li><li data-type="method" id="COMMON-removeSpecialChar-nav"><a href="module-COMMON.html#~removeSpecialChar">removeSpecialChar</a></li><li data-type="method" id="COMMON-round-nav"><a href="module-COMMON.html#~round">round</a></li><li data-type="method" id="COMMON-slicePluginName-nav"><a href="module-COMMON.html#~slicePluginName">slicePluginName</a></li><li data-type="method" id="COMMON-subname-nav"><a href="module-COMMON.html#~subname">subname</a></li></ul></li><li id="DATASTORE-nav"><a href="module-DATASTORE.html">DATASTORE</a><ul class='methods'><li data-type="method" id="DATASTORE-load-nav"><a href="module-DATASTORE.html#~load">load</a></li><li data-type="method" id="DATASTORE-save-nav"><a href="module-DATASTORE.html#~save">save</a></li></ul></li><li id="DEPLOY-nav"><a href="module-DEPLOY.html">DEPLOY</a><ul class='methods'><li data-type="method" id="DEPLOY-checkCredential-nav"><a href="module-DEPLOY.html#~checkCredential">checkCredential</a></li><li data-type="method" id="DEPLOY-generateAppState-nav"><a href="module-DEPLOY.html#~generateAppState">generateAppState</a></li><li data-type="method" id="DEPLOY-isJ2teamCookie-nav"><a href="module-DEPLOY.html#~isJ2teamCookie">isJ2teamCookie</a></li><li data-type="method" id="DEPLOY-truncateMusics-nav"><a href="module-DEPLOY.html#~truncateMusics">truncateMusics</a></li></ul></li></ul>
+  </nav>
+
+  <div id="main">
+    
+      <h1 class="page-title">
+        COMMON
+      </h1>
+    
+
+    
+
+<section>
+  <header>
+    
+      
+        
+  </header>
+
+  <article>
+    <div class="container-overview">
+      
+        
+          <div class="description">
+            <p>Nơi đây chứa các function thông thường được dùng nhiều<br>
+Lưu ý: Các bạn sử dụng các hàm này trong <code>kb2abot.utils</code> thay vì <code>kb2abot.utils.COMMON</code> nha!</p>
+          </div>
+        
+
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="COMMON.js.html">COMMON.js</a>, <a href="COMMON.js.html#line1">line 1</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+      
+    </div>
+
+    
+
+    
+
+    
+
+     
+
+    
+
+    
+
+    
+      <h3 class="subsection-title">Methods</h3>
+
+      
+        
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#~apiErrorHandler">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="~apiErrorHandler">
+      <span class="type-signature">(inner) </span>apiErrorHandler<span class="signature">(api, message, err)</span><span class="type-signature"></span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>Handler cho facebook-chat-api khi bị lỗi gửi tin nhắn</p>
+  </div>
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
+  
+
+<table class="params">
+  <thead>
+    <tr>
+      
+        <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+
+      
+
+      <th class="last">Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    
+      <tr>
+        
+          <td class="name"><code>api</code></td>
+        
+
+        <td class="type">
+          
+        </td>
+
+        
+
+        
+
+        <td class="description last">
+          <p>API của facebook-chat-api</p>
+          
+        </td>
+      </tr>
+
+    
+      <tr>
+        
+          <td class="name"><code>message</code></td>
+        
+
+        <td class="type">
+          
+        </td>
+
+        
+
+        
+
+        <td class="description last">
+          <p>message trong callback của api.listen</p>
+          
+        </td>
+      </tr>
+
+    
+      <tr>
+        
+          <td class="name"><code>err</code></td>
+        
+
+        <td class="type">
+          
+        </td>
+
+        
+
+        
+
+        <td class="description last">
+          <p>err trong callback của api.sendMessage</p>
+          
+        </td>
+      </tr>
+
+    
+  </tbody>
+</table>
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="COMMON.js.html">COMMON.js</a>, <a href="COMMON.js.html#line279">line 279</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+        
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#~asyncWait">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="~asyncWait">
+      <span class="type-signature">(async, inner) </span>asyncWait<span class="signature">(time)</span><span class="type-signature"></span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>Hàm dừng chương trình async</p>
+  </div>
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
+  
+
+<table class="params">
+  <thead>
+    <tr>
+      
+        <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+
+      
+
+      <th class="last">Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    
+      <tr>
+        
+          <td class="name"><code>time</code></td>
+        
+
+        <td class="type">
+          
+            
+    <span class="param-type">
+      Number
+    </span>
+
+    
+
+
+          
+        </td>
+
+        
+
+        
+
+        <td class="description last">
+          <p>Thời gian bạn muốn dừng (milisecond)</p>
+          
+        </td>
+      </tr>
+
+    
+  </tbody>
+</table>
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="COMMON.js.html">COMMON.js</a>, <a href="COMMON.js.html#line19">line 19</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="example-container">
+    <a class="link-icon" href="#asyncWait-examples">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h5 id="asyncWait-examples">Example</h5>
+    
+
+  <pre class="prettyprint"><code>console.log("Loi! Vui long gui lai sau 5 giay")kb2abot.utils.asyncWait(5000).then(() => {	console.log("Ban co the gui lai duoc roi!");});</code></pre>
+
+
+  </div>
+
+
+      
+        
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#~currencyFormat">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="~currencyFormat">
+      <span class="type-signature">(inner) </span>currencyFormat<span class="signature">(number)</span><span class="type-signature"> &rarr; {String}</span>
+    </h4>
+  </span>
+
+  
+
+
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
+  
+
+<table class="params">
+  <thead>
+    <tr>
+      
+        <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+
+      
+
+      <th class="last">Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    
+      <tr>
+        
+          <td class="name"><code>number</code></td>
+        
+
+        <td class="type">
+          
+            
+    <span class="param-type">
+      String
+    </span>
+
+    |
+
+    <span class="param-type">
+      Number
+    </span>
+
+    
+
+
+          
+        </td>
+
+        
+
+        
+
+        <td class="description last">
+          <p>Định dạng 1 string, number về dạng tiền tệ</p>
+          
+        </td>
+      </tr>
+
+    
+  </tbody>
+</table>
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="COMMON.js.html">COMMON.js</a>, <a href="COMMON.js.html#line256">line 256</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="example-container">
+    <a class="link-icon" href="#currencyFormat-examples">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h5 id="currencyFormat-examples">Example</h5>
+    
+
+  <pre class="prettyprint"><code>kb2abot.utils.currencyFormat(1234567);// "1,234,567"</code></pre>
+
+
+  </div>
+
+
+      
+        
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#~deleteFile">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="~deleteFile">
+      <span class="type-signature">(async, inner) </span>deleteFile<span class="signature">(path)</span><span class="type-signature"></span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>Xóa 1 file theo đường dẫn</p>
+  </div>
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
+  
+
+<table class="params">
+  <thead>
+    <tr>
+      
+        <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+
+      
+
+      <th class="last">Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    
+      <tr>
+        
+          <td class="name"><code>path</code></td>
+        
+
+        <td class="type">
+          
+            
+    <span class="param-type">
+      String
+    </span>
+
+    
+
+
+          
+        </td>
+
+        
+
+        
+
+        <td class="description last">
+          <p>Đường dẫn tới file</p>
+          
+        </td>
+      </tr>
+
+    
+  </tbody>
+</table>
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="COMMON.js.html">COMMON.js</a>, <a href="COMMON.js.html#line157">line 157</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="example-container">
+    <a class="link-icon" href="#deleteFile-examples">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h5 id="deleteFile-examples">Example</h5>
+    
+
+  <pre class="prettyprint"><code>kb2abot.utils.deleteFile(__dirname + "/test.txt");// *File test.txt sẽ bị xóa*</code></pre>
+
+
+  </div>
+
+
+      
+        
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#~extend">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="~extend">
+      <span class="type-signature">(inner) </span>extend<span class="signature">(object, deep)</span><span class="type-signature"> &rarr; {Object}</span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>Kế thừa các thuộc tính của 1 object sâu (khác với Object.assign)</p>
+  </div>
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
+  
+
+<table class="params">
+  <thead>
+    <tr>
+      
+        <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+
+      
+
+      <th class="last">Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    
+      <tr>
+        
+          <td class="name"><code>object</code></td>
+        
+
+        <td class="type">
+          
+            
+    <span class="param-type">
+      Object
+    </span>
+
+    
+
+
+          
+        </td>
+
+        
+
+        
+
+        <td class="description last">
+          <p>Object kế thừa</p>
+          
+        </td>
+      </tr>
+
+    
+      <tr>
+        
+          <td class="name"><code>deep</code></td>
+        
+
+        <td class="type">
+          
+            
+    <span class="param-type">
+      Object
+    </span>
+
+    
+
+
+          
+        </td>
+
+        
+
+        
+
+        <td class="description last">
+          <p>Object bị kế thừa</p>
+          
+        </td>
+      </tr>
+
+    
+  </tbody>
+</table>
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="COMMON.js.html">COMMON.js</a>, <a href="COMMON.js.html#line58">line 58</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="example-container">
+    <a class="link-icon" href="#extend-examples">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h5 id="extend-examples">Example</h5>
+    
+
+  <pre class="prettyprint"><code>const a = {	level1: {		tmp: true	}};const b = {	level1: {		level2: "kb2abot"	}}kb2abot.utils.extend(a, b);// {level1: {level2: "kb2abot", tmp: true}}</code></pre>
+
+
+  </div>
+
+
+      
+        
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#~getFileSize">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="~getFileSize">
+      <span class="type-signature">(inner) </span>getFileSize<span class="signature">(path)</span><span class="type-signature"> &rarr; {Number}</span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>Tính dung lượng của file (theo mb)</p>
+  </div>
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
+  
+
+<table class="params">
+  <thead>
+    <tr>
+      
+        <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+
+      
+
+      <th class="last">Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    
+      <tr>
+        
+          <td class="name"><code>path</code></td>
+        
+
+        <td class="type">
+          
+            
+    <span class="param-type">
+      String
+    </span>
+
+    
+
+
+          
+        </td>
+
+        
+
+        
+
+        <td class="description last">
+          <p>Đường dẫn tới file</p>
+          
+        </td>
+      </tr>
+
+    
+  </tbody>
+</table>
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="COMMON.js.html">COMMON.js</a>, <a href="COMMON.js.html#line210">line 210</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="example-container">
+    <a class="link-icon" href="#getFileSize-examples">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h5 id="getFileSize-examples">Example</h5>
+    
+
+  <pre class="prettyprint"><code>// file test.txt có dung lượng 1024KBkb2abot.utils.getFileSize(__dirname + "/test.txt");// 1</code></pre>
+
+
+  </div>
+
+
+      
+        
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#~getKeyword">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="~getKeyword">
+      <span class="type-signature">(inner) </span>getKeyword<span class="signature">(text)</span><span class="type-signature"> &rarr; {String}</span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>Lấy keyword của 1 đoạn tin nhắn</p>
+  </div>
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
+  
+
+<table class="params">
+  <thead>
+    <tr>
+      
+        <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+
+      
+
+      <th class="last">Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    
+      <tr>
+        
+          <td class="name"><code>text</code></td>
+        
+
+        <td class="type">
+          
+            
+    <span class="param-type">
+      String
+    </span>
+
+    
+
+
+          
+        </td>
+
+        
+
+        
+
+        <td class="description last">
+          <p>Đoạn tin nhắn của người dùng</p>
+          
+        </td>
+      </tr>
+
+    
+  </tbody>
+</table>
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="COMMON.js.html">COMMON.js</a>, <a href="COMMON.js.html#line195">line 195</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="example-container">
+    <a class="link-icon" href="#getKeyword-examples">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h5 id="getKeyword-examples">Example</h5>
+    
+
+  <pre class="prettyprint"><code>kb2abot.utils.getKeyword("/help")// "help"kb2abot.utils.getKeyword("/ytmp3 -s 'Anh yeu em'")// "ytmp3"</code></pre>
+
+
+  </div>
+
+
+      
+        
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#~numbersToWords">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="~numbersToWords">
+      <span class="type-signature">(inner) </span>numbersToWords<span class="signature">(number)</span><span class="type-signature"> &rarr; {String}</span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>Chuyển 1 số về dạng mật mã đặc biệt (theo bảng chữ cái tiếng anh)</p>
+  </div>
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
+  
+
+<table class="params">
+  <thead>
+    <tr>
+      
+        <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+
+      
+
+      <th class="last">Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    
+      <tr>
+        
+          <td class="name"><code>number</code></td>
+        
+
+        <td class="type">
+          
+            
+    <span class="param-type">
+      Number
+    </span>
+
+    
+
+
+          
+        </td>
+
+        
+
+        
+
+        <td class="description last">
+          <p>Số bạn muốn chuyển</p>
+          
+        </td>
+      </tr>
+
+    
+  </tbody>
+</table>
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="COMMON.js.html">COMMON.js</a>, <a href="COMMON.js.html#line240">line 240</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="example-container">
+    <a class="link-icon" href="#numbersToWords-examples">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h5 id="numbersToWords-examples">Example</h5>
+    
+
+  <pre class="prettyprint"><code>kb2abot.utils.numbersToWords(123);// "oth"kb2abot.utils.numbersToWords(18102004);// "ogoztzzf"</code></pre>
+
+
+  </div>
+
+
+      
+        
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#~parseArg">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="~parseArg">
+      <span class="type-signature">(inner) </span>parseArg<span class="signature">(text, specialChar<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {Object}</span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>Dịch 1 đoạn văn bản thành các arguments (engine minimist)</p>
+  </div>
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
+  
+
+<table class="params">
+  <thead>
+    <tr>
+      
+        <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+        <th>Attributes</th>
+      
+
+      
+        <th>Default</th>
+      
+
+      <th class="last">Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    
+      <tr>
+        
+          <td class="name"><code>text</code></td>
+        
+
+        <td class="type">
+          
+            
+    <span class="param-type">
+      String
+    </span>
+
+    
+
+
+          
+        </td>
+
+        
+          <td class="attributes">
+            
+
+            
+
+            
+          </td>
+        
+
+        
+          <td class="default">
+            
+          </td>
+        
+
+        <td class="description last">
+          <p>Đoạn văn bản nào đó</p>
+          
+        </td>
+      </tr>
+
+    
+      <tr>
+        
+          <td class="name"><code>specialChar</code></td>
+        
+
+        <td class="type">
+          
+            
+    <span class="param-type">
+      String
+    </span>
+
+    
+
+
+          
+        </td>
+
+        
+          <td class="attributes">
+            
+              &lt;optional><br>
+            
+
+            
+
+            
+          </td>
+        
+
+        
+          <td class="default">
+            
+              א
+            
+          </td>
+        
+
+        <td class="description last">
+          <p>Kí tự đặc biệt để xử lí quote</p>
+          
+        </td>
+      </tr>
+
+    
+  </tbody>
+</table>
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="COMMON.js.html">COMMON.js</a>, <a href="COMMON.js.html#line98">line 98</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="example-container">
+    <a class="link-icon" href="#parseArg-examples">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h5 id="parseArg-examples">Example</h5>
+    
+
+  <pre class="prettyprint"><code>//Xem ở đây: <a href="https://www.npmjs.com/package/minimist">https://www.npmjs.com/package/minimist</a> (nhớ CTRL + CLICK)</code></pre>
+
+
+  </div>
+
+
+      
+        
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#~parseBool">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="~parseBool">
+      <span class="type-signature">(inner) </span>parseBool<span class="signature">(text)</span><span class="type-signature"> &rarr; {Boolean}</span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>Kiểm tra tính tích cực hay tiêu cực của xâu</p>
+  </div>
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
+  
+
+<table class="params">
+  <thead>
+    <tr>
+      
+        <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+
+      
+
+      <th class="last">Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    
+      <tr>
+        
+          <td class="name"><code>text</code></td>
+        
+
+        <td class="type">
+          
+            
+    <span class="param-type">
+      String
+    </span>
+
+    
+
+
+          
+        </td>
+
+        
+
+        
+
+        <td class="description last">
+          <p>Đoạn văn bản nào đó</p>
+          
+        </td>
+      </tr>
+
+    
+  </tbody>
+</table>
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="COMMON.js.html">COMMON.js</a>, <a href="COMMON.js.html#line126">line 126</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="example-container">
+    <a class="link-icon" href="#parseBool-examples">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h5 id="parseBool-examples">Example</h5>
+    
+
+  <pre class="prettyprint"><code>kb2abot.utils.parseBool("yes"); // yes, positive, on, ... đều trả về True// Truekb2abot.utils.parseBool("no"); // off, false, no, ... đều trả về False// False</code></pre>
+
+
+  </div>
+
+
+      
+        
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#~parseJSON">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="~parseJSON">
+      <span class="type-signature">(async, inner) </span>parseJSON<span class="signature">(json)</span><span class="type-signature"> &rarr; {Promise}</span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>Dịch json sang object</p>
+  </div>
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
+  
+
+<table class="params">
+  <thead>
+    <tr>
+      
+        <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+
+      
+
+      <th class="last">Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    
+      <tr>
+        
+          <td class="name"><code>json</code></td>
+        
+
+        <td class="type">
+          
+            
+    <span class="param-type">
+      String
+    </span>
+
+    
+
+
+          
+        </td>
+
+        
+
+        
+
+        <td class="description last">
+          <p>JSON</p>
+          
+        </td>
+      </tr>
+
+    
+  </tbody>
+</table>
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="COMMON.js.html">COMMON.js</a>, <a href="COMMON.js.html#line143">line 143</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="example-container">
+    <a class="link-icon" href="#parseJSON-examples">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h5 id="parseJSON-examples">Example</h5>
+    
+
+  <pre class="prettyprint"><code>kb2abot.utils.parseJSON('{"kb2abot": true}').then(result => {	console.log(result);})// {kb2abot: true}</code></pre>
+
+
+  </div>
+
+
+      
+        
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#~parseValue">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="~parseValue">
+      <span class="type-signature">(inner) </span>parseValue<span class="signature">(args, validList)</span><span class="type-signature"> &rarr; {Boolean|String|Number}</span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>Lấy giá trị trong minimist arguments (Dùng chung với hàm parseArg)</p>
+  </div>
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
+  
+
+<table class="params">
+  <thead>
+    <tr>
+      
+        <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+
+      
+
+      <th class="last">Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    
+      <tr>
+        
+          <td class="name"><code>args</code></td>
+        
+
+        <td class="type">
+          
+            
+    <span class="param-type">
+      Object
+    </span>
+
+    
+
+
+          
+        </td>
+
+        
+
+        
+
+        <td class="description last">
+          <p>Args của minimist</p>
+          
+        </td>
+      </tr>
+
+    
+      <tr>
+        
+          <td class="name"><code>validList</code></td>
+        
+
+        <td class="type">
+          
+            
+    <span class="param-type">
+      Array
+    </span>
+
+    
+
+
+          
+        </td>
+
+        
+
+        
+
+        <td class="description last">
+          <p>Các trường mà bạn cần lấy giá trị</p>
+          
+        </td>
+      </tr>
+
+    
+  </tbody>
+</table>
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="COMMON.js.html">COMMON.js</a>, <a href="COMMON.js.html#line176">line 176</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="example-container">
+    <a class="link-icon" href="#parseValue-examples">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h5 id="parseValue-examples">Example</h5>
+    
+
+  <pre class="prettyprint"><code>const args = kb2abot.utils.parseArg("kb2abot --version -s");kb2abot.utils.parseValue(args, ["version", "v"]);// 1kb2abot.utils.parseValue(args, ["s"]);// TRUE</code></pre>
+
+
+  </div>
+
+
+      
+        
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#~removeSpecialChar">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="~removeSpecialChar">
+      <span class="type-signature">(inner) </span>removeSpecialChar<span class="signature">(text)</span><span class="type-signature"> &rarr; {String}</span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>Loại bỏ các kí tự lạ trong văn bản</p>
+  </div>
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
+  
+
+<table class="params">
+  <thead>
+    <tr>
+      
+        <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+
+      
+
+      <th class="last">Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    
+      <tr>
+        
+          <td class="name"><code>text</code></td>
+        
+
+        <td class="type">
+          
+            
+    <span class="param-type">
+      String
+    </span>
+
+    
+
+
+          
+        </td>
+
+        
+
+        
+
+        <td class="description last">
+          <p>Văn bản nào đó</p>
+          
+        </td>
+      </tr>
+
+    
+  </tbody>
+</table>
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="COMMON.js.html">COMMON.js</a>, <a href="COMMON.js.html#line290">line 290</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+        
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#~round">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="~round">
+      <span class="type-signature">(inner) </span>round<span class="signature">(number, amount)</span><span class="type-signature"> &rarr; {Number}</span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>Làm tròn đến chữ số thập phân x</p>
+  </div>
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
+  
+
+<table class="params">
+  <thead>
+    <tr>
+      
+        <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+
+      
+
+      <th class="last">Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    
+      <tr>
+        
+          <td class="name"><code>number</code></td>
+        
+
+        <td class="type">
+          
+            
+    <span class="param-type">
+      Number
+    </span>
+
+    
+
+
+          
+        </td>
+
+        
+
+        
+
+        <td class="description last">
+          <p>Số bạn muốn làm tròn</p>
+          
+        </td>
+      </tr>
+
+    
+      <tr>
+        
+          <td class="name"><code>amount</code></td>
+        
+
+        <td class="type">
+          
+            
+    <span class="param-type">
+      Number
+    </span>
+
+    
+
+
+          
+        </td>
+
+        
+
+        
+
+        <td class="description last">
+          <p>Số lượng chữ số thập phân (x)</p>
+          
+        </td>
+      </tr>
+
+    
+  </tbody>
+</table>
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="COMMON.js.html">COMMON.js</a>, <a href="COMMON.js.html#line35">line 35</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="example-container">
+    <a class="link-icon" href="#round-examples">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h5 id="round-examples">Example</h5>
+    
+
+  <pre class="prettyprint"><code>kb2abot.utils.round(Math.PI, 2);// 3.14</code></pre>
+
+
+  </div>
+
+
+      
+        
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#~slicePluginName">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="~slicePluginName">
+      <span class="type-signature">(inner) </span>slicePluginName<span class="signature">(text)</span><span class="type-signature"> &rarr; {String}</span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>Lấy dữ liệu của tin nhắn câu lệnh</p>
+  </div>
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
+  
+
+<table class="params">
+  <thead>
+    <tr>
+      
+        <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+
+      
+
+      <th class="last">Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    
+      <tr>
+        
+          <td class="name"><code>text</code></td>
+        
+
+        <td class="type">
+          
+            
+    <span class="param-type">
+      String
+    </span>
+
+    
+
+
+          
+        </td>
+
+        
+
+        
+
+        <td class="description last">
+          <p>Lệnh người dùng nhập</p>
+          
+        </td>
+      </tr>
+
+    
+  </tbody>
+</table>
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="COMMON.js.html">COMMON.js</a>, <a href="COMMON.js.html#line267">line 267</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="example-container">
+    <a class="link-icon" href="#slicePluginName-examples">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h5 id="slicePluginName-examples">Example</h5>
+    
+
+  <pre class="prettyprint"><code>kb2abot.utils.slicePluginName("/help hello, good morning!");// "hello, good morning!"</code></pre>
+
+
+  </div>
+
+
+      
+        
+
+
+  
+
+  <span class='name-container'>
+    <a class="link-icon" href="#~subname">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h4 class="name" id="~subname">
+      <span class="type-signature">(inner) </span>subname<span class="signature">(text)</span><span class="type-signature"> &rarr; {String}</span>
+    </h4>
+  </span>
+
+  
+
+
+
+  <div class="description">
+    <p>Lấy tên file bỏ đuôi extension</p>
+  </div>
+
+
+
+
+
+
+
+  <h5>Parameters:</h5>
+  
+
+<table class="params">
+  <thead>
+    <tr>
+      
+        <th>Name</th>
+      
+
+      <th>Type</th>
+
+      
+
+      
+
+      <th class="last">Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    
+      <tr>
+        
+          <td class="name"><code>text</code></td>
+        
+
+        <td class="type">
+          
+            
+    <span class="param-type">
+      String
+    </span>
+
+    
+
+
+          
+        </td>
+
+        
+
+        
+
+        <td class="description last">
+          <p>Tên file</p>
+          
+        </td>
+      </tr>
+
+    
+  </tbody>
+</table>
+
+
+
+
+
+<dl class="details">
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source">
+      <ul class="dummy">
+        <li>
+          <a href="COMMON.js.html">COMMON.js</a>, <a href="COMMON.js.html#line224">line 224</a>
+        </li>
+      </ul>
+    </dd>
+  
+
+  
+
+  
+
+  
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="example-container">
+    <a class="link-icon" href="#subname-examples">
+      <svg height="20" width="20" style="fill: black;">
+        <use xlink:href="#linkIcon"></use>
+      </svg>
+    </a>
+    <h5 id="subname-examples">Example</h5>
+    
+
+  <pre class="prettyprint"><code>kb2abot.utils.subname("test.txt");// "test"</code></pre>
+
+
+  </div>
+
+
+      
+    
+
+    
+
+    
+  </article>
+</section>
+
+
+
+
+  </div>
+
+  <br class="clear">
+
+  <footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.6</a>
+  </footer>
+
+  <script src="scripts/linenumber.js"></script>
+  <script src="scripts/pagelocation.js"></script>
+
+  
+
+</body>
+</html>

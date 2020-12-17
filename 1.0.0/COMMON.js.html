@@ -1,0 +1,431 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+      COMMON.js - Documentation
+  </title>
+
+  <link href="https://www.braintreepayments.com/images/favicon-ccda0b14.png" rel="icon" type="image/png">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+  <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+  <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+  
+  <link type="text/css" rel="stylesheet" href="styles/collapse.css">
+  
+
+  
+
+  <!-- start Mixpanel -->
+  <script type="text/javascript">(function(e,a){if(!a.__SV){var b=window;try{var c,l,i,j=b.location,g=j.hash;c=function(a,b){return(l=a.match(RegExp(b+"=([^&]*)")))?l[1]:null};g&&c(g,"state")&&(i=JSON.parse(decodeURIComponent(c(g,"state"))),"mpeditor"===i.action&&(b.sessionStorage.setItem("_mpcehash",g),history.replaceState(i.desiredHash||"",e.title,j.pathname+j.search)))}catch(m){}var k,h;window.mixpanel=a;a._i=[];a.init=function(b,c,f){function e(b,a){var c=a.split(".");2==c.length&&(b=b[c[0]],a=c[1]);b[a]=function(){b.push([a].concat(Array.prototype.slice.call(arguments,
+  0)))}}var d=a;"undefined"!==typeof f?d=a[f]=[]:f="mixpanel";d.people=d.people||[];d.toString=function(b){var a="mixpanel";"mixpanel"!==f&&(a+="."+f);b||(a+=" (stub)");return a};d.people.toString=function(){return d.toString(1)+".people (stub)"};k="disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config reset people.set people.set_once people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
+  for(h=0;h<k.length;h++)e(d,k[h]);a._i.push([b,c,f])};a.__SV=1.2;b=e.createElement("script");b.type="text/javascript";b.async=!0;b.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?MIXPANEL_CUSTOM_LIB_URL:"file:"===e.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";c=e.getElementsByTagName("script")[0];c.parentNode.insertBefore(b,c)}})(document,window.mixpanel||[]);
+  mixpanel.init("1919205b2da72e4da3b9b6639b444d59");</script>
+  <!-- end Mixpanel -->
+</head>
+
+<body>
+  <svg style="display: none;">
+    <defs>
+      <symbol id="linkIcon" fill="#706d77" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 0h24v24H0z" fill="none"/>
+          <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/>
+      </symbol>
+    </defs>
+  </svg>
+
+  <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+  <label for="nav-trigger" class="navicon-button x">
+    <div class="navicon"></div>
+  </label>
+
+  <label for="nav-trigger" class="overlay"></label>
+
+  <div class="top-nav-wrapper">
+    <ul>
+      <li >
+        <a href="index.html">
+          
+            <svg fill="#6D6D6D" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+              <path d="M0 0h24v24H0z" fill="none"/>
+            </svg>
+          
+          
+        </a>
+      </li>
+
+      
+
+    </ul>
+  </div>
+
+  <nav>
+    <h3 class="reference-title">
+      KB2A BOT
+    </h3>
+
+    
+
+    <h3>Modules</h3><ul><li id="COMMON-nav"><a href="module-COMMON.html">COMMON</a><ul class='methods'><li data-type="method" id="COMMON-apiErrorHandler-nav"><a href="module-COMMON.html#~apiErrorHandler">apiErrorHandler</a></li><li data-type="method" id="COMMON-asyncWait-nav"><a href="module-COMMON.html#~asyncWait">asyncWait</a></li><li data-type="method" id="COMMON-currencyFormat-nav"><a href="module-COMMON.html#~currencyFormat">currencyFormat</a></li><li data-type="method" id="COMMON-deleteFile-nav"><a href="module-COMMON.html#~deleteFile">deleteFile</a></li><li data-type="method" id="COMMON-extend-nav"><a href="module-COMMON.html#~extend">extend</a></li><li data-type="method" id="COMMON-getFileSize-nav"><a href="module-COMMON.html#~getFileSize">getFileSize</a></li><li data-type="method" id="COMMON-getKeyword-nav"><a href="module-COMMON.html#~getKeyword">getKeyword</a></li><li data-type="method" id="COMMON-numbersToWords-nav"><a href="module-COMMON.html#~numbersToWords">numbersToWords</a></li><li data-type="method" id="COMMON-parseArg-nav"><a href="module-COMMON.html#~parseArg">parseArg</a></li><li data-type="method" id="COMMON-parseBool-nav"><a href="module-COMMON.html#~parseBool">parseBool</a></li><li data-type="method" id="COMMON-parseJSON-nav"><a href="module-COMMON.html#~parseJSON">parseJSON</a></li><li data-type="method" id="COMMON-parseValue-nav"><a href="module-COMMON.html#~parseValue">parseValue</a></li><li data-type="method" id="COMMON-removeSpecialChar-nav"><a href="module-COMMON.html#~removeSpecialChar">removeSpecialChar</a></li><li data-type="method" id="COMMON-round-nav"><a href="module-COMMON.html#~round">round</a></li><li data-type="method" id="COMMON-slicePluginName-nav"><a href="module-COMMON.html#~slicePluginName">slicePluginName</a></li><li data-type="method" id="COMMON-subname-nav"><a href="module-COMMON.html#~subname">subname</a></li></ul></li><li id="DATASTORE-nav"><a href="module-DATASTORE.html">DATASTORE</a><ul class='methods'><li data-type="method" id="DATASTORE-load-nav"><a href="module-DATASTORE.html#~load">load</a></li><li data-type="method" id="DATASTORE-save-nav"><a href="module-DATASTORE.html#~save">save</a></li></ul></li><li id="DEPLOY-nav"><a href="module-DEPLOY.html">DEPLOY</a><ul class='methods'><li data-type="method" id="DEPLOY-checkCredential-nav"><a href="module-DEPLOY.html#~checkCredential">checkCredential</a></li><li data-type="method" id="DEPLOY-generateAppState-nav"><a href="module-DEPLOY.html#~generateAppState">generateAppState</a></li><li data-type="method" id="DEPLOY-isJ2teamCookie-nav"><a href="module-DEPLOY.html#~isJ2teamCookie">isJ2teamCookie</a></li><li data-type="method" id="DEPLOY-truncateMusics-nav"><a href="module-DEPLOY.html#~truncateMusics">truncateMusics</a></li></ul></li></ul>
+  </nav>
+
+  <div id="main">
+    
+      <h1 class="page-title">
+        COMMON.js
+      </h1>
+    
+
+    
+      
+
+<section>
+  <article>
+    <pre class="prettyprint source linenums"><code>/**
+ * Nơi đây chứa các function thông thường được dùng nhiều&lt;br>
+ * Lưu ý: Các bạn sử dụng các hàm này trong &lt;code>kb2abot.utils&lt;/code> thay vì &lt;code>kb2abot.utils.COMMON&lt;/code> nha!
+ * @module COMMON
+ */
+const fs = require("fs");
+const minimist = require("minimist");
+
+/**
+ * Hàm dừng chương trình async
+ * @async
+ * @param  {Number} time Thời gian bạn muốn dừng (milisecond)
+ * @example
+ * console.log("Loi! Vui long gui lai sau 5 giay")
+ * kb2abot.utils.asyncWait(5000).then(() => {
+ * 	console.log("Ban co the gui lai duoc roi!");
+ * });
+ */
+const asyncWait = async time => {
+	return new Promise(resolve => {
+		setTimeout(() => {
+			resolve();
+		}, time);
+	});
+};
+/**
+ * Làm tròn đến chữ số thập phân x
+ * @param  {Number} number Số bạn muốn làm tròn
+ * @param  {Number} amount Số lượng chữ số thập phân (x)
+ * @return {Number}        Số được làm tròn chữ số thập phân x
+ * @example
+ * kb2abot.utils.round(Math.PI, 2);
+ * // 3.14
+ */
+const round = (number, amount) => {
+	return parseFloat(Number(number).toFixed(amount));
+};
+/**
+ * Kế thừa các thuộc tính của 1 object sâu (khác với Object.assign)
+ * @param  {Object} object Object kế thừa
+ * @param  {Object} deep Object bị kế thừa
+ * @return {Object}        Object đã kế thừa
+ * @example
+ * const a = {
+ * 	level1: {
+ * 		tmp: true
+ * 	}
+ * };
+ * const b = {
+ * 	level1: {
+ * 		level2: "kb2abot"
+ * 	}
+ * }
+ * kb2abot.utils.extend(a, b);
+ * // {level1: {level2: "kb2abot", tmp: true}
+ * }
+ */
+const extend = (obj, deep) => {
+	let argsStart, deepClone;
+
+	if (typeof deep === "boolean") {
+		argsStart = 2;
+		deepClone = deep;
+	} else {
+		argsStart = 1;
+		deepClone = true;
+	}
+
+	for (let i = argsStart; i &lt; arguments.length; i++) {
+		const source = arguments[i];
+
+		if (source) {
+			for (let prop in source) {
+				if (deepClone &amp;&amp; source[prop] &amp;&amp; source[prop].constructor === Object) {
+					if (!obj[prop] || obj[prop].constructor === Object) {
+						obj[prop] = obj[prop] || {};
+						extend(obj[prop], deepClone, source[prop]);
+					} else {
+						obj[prop] = source[prop];
+					}
+				} else {
+					obj[prop] = source[prop];
+				}
+			}
+		}
+	}
+
+	return obj;
+};
+/**
+ * Dịch 1 đoạn văn bản thành các arguments (engine minimist)
+ * @param  {String} text         Đoạn văn bản nào đó
+ * @param  {String} [specialChar=א] Kí tự đặc biệt để xử lí quote
+ * @return {Object}             Arguments
+ * @example
+ * //Xem ở đây: {@link https://www.npmjs.com/package/minimist} (nhớ CTRL + CLICK)
+ */
+const parseArg = (str, specialChar) => {
+	const quotes = ['"', "'", "`"];
+	for (let quote of quotes) {
+		let tmp = str.split(quote);
+		for (let i = 1; i &lt; tmp.length; i += 2) {
+			str = str.replace(
+				`${quote}${tmp[i]}`,
+				`${tmp[i].replace(/ /g, specialChar)}`
+			);
+			str = str.replace(quote, "");
+		}
+	}
+	const output = [];
+	str.split(" ").forEach(word => {
+		output.push(word.replace(new RegExp(specialChar, "g"), " "));
+	});
+	return minimist(output);
+};
+/**
+ * Kiểm tra tính tích cực hay tiêu cực của xâu
+ * @param  {String} text Đoạn văn bản nào đó
+ * @return {Boolean}     True hoặc False
+ * @example
+ * kb2abot.utils.parseBool("yes"); // yes, positive, on, ... đều trả về True
+ * // True
+ * kb2abot.utils.parseBool("no"); // off, false, no, ... đều trả về False
+ * // False
+ */
+const parseBool = str => {
+	if (["on", "true", "yes", "positive", "t"].indexOf(str) != -1) {
+		return true;
+	}
+	if (["off", "false", "no", "negative", "n"].indexOf(str) != -1) return false;
+	return Boolean(str);
+};
+/**
+ * Dịch json sang object
+ * @param  {String} json JSON
+ * @return {Promise}     Promise với JSON được dịch
+ * @example
+ * kb2abot.utils.parseJSON('{"kb2abot": true}').then(result => {
+ * 	console.log(result);
+ * })
+ * // {kb2abot: true}
+ */
+const parseJSON = async text => {
+	try {
+		return JSON.parse(text);
+	} catch (e) {
+		throw e;
+	}
+};
+/**
+ * Xóa 1 file theo đường dẫn
+ * @param  {String} path Đường dẫn tới file
+ * @example
+ * kb2abot.utils.deleteFile(__dirname + "/test.txt");
+ * // *File test.txt sẽ bị xóa*
+ */
+const deleteFile = async path => {
+	try {
+		fs.unlinkSync(path);
+	} catch (e) {
+		throw e;
+	}
+};
+/**
+ * Lấy giá trị trong minimist arguments (Dùng chung với hàm parseArg)
+ * @param  {Object} args           Args của minimist
+ * @param  {Array} validList       Các trường mà bạn cần lấy giá trị
+ * @return {Boolean|String|Number} Giá trị của trường đó
+ * @example
+ * const args = kb2abot.utils.parseArg("kb2abot --version -s");
+ * kb2abot.utils.parseValue(args, ["version", "v"]);
+ * // 1
+ * kb2abot.utils.parseValue(args, ["s"]);
+ * // TRUE
+ */
+const parseValue = (args, validList) => {
+	for (const param in args) {
+		if (validList.indexOf(param) != -1) {
+			const value = args[param];
+			return typeof value == "object" ? value[value.length - 1] : value;
+		}
+	}
+	return undefined;
+};
+/**
+ * Lấy keyword của 1 đoạn tin nhắn
+ * @param  {String} text Đoạn tin nhắn của người dùng
+ * @return {String}      Keyword của lệnh đó
+ * @example
+ * kb2abot.utils.getKeyword("/help")
+ * // "help"
+ * kb2abot.utils.getKeyword("/ytmp3 -s 'Anh yeu em'")
+ * // "ytmp3"
+ */
+const getKeyword = text => {
+	return text
+		.split(" ")
+		.slice(0, 1)[0]
+		.slice(1);
+};
+/**
+ * Tính dung lượng của file (theo mb)
+ * @param  {String} path Đường dẫn tới file
+ * @return {Number}      Dung lượng của file (mb)
+ * @example
+ * // file test.txt có dung lượng 1024KB
+ * kb2abot.utils.getFileSize(__dirname + "/test.txt");
+ * // 1
+ */
+const getFileSize = path => {
+	let fileSizeInBytes = fs.statSync(path)["size"];
+	//Convert the file size to megabytes (optional)
+	let fileSizeInMegabytes = fileSizeInBytes / 1000000.0;
+	return Math.round(fileSizeInMegabytes);
+};
+/**
+ * Lấy tên file bỏ đuôi extension
+ * @param  {String} text Tên file
+ * @return {String}      Tên file không có đuôi
+ * @example
+ * kb2abot.utils.subname("test.txt");
+ * // "test"
+ */
+const subname = text => {
+	return text
+		.split(".")
+		.slice(0, -1)
+		.join(".");
+};
+/**
+ * Chuyển 1 số về dạng mật mã đặc biệt (theo bảng chữ cái tiếng anh)
+ * @param  {Number} number Số bạn muốn chuyển
+ * @return {String}        Mã đặc biệt 1 = "o", 2 = "t",...
+ * @example
+ * kb2abot.utils.numbersToWords(123);
+ * // "oth"
+ * kb2abot.utils.numbersToWords(18102004);
+ * // "ogoztzzf"
+ */
+const numbersToWords = function(number) {
+	const numbers = ["z", "o", "t", "h", "f", "i", "s", "e", "g", "n"];
+	let str = number.toString();
+	for (let i = 0; i &lt; 10; i++) {
+		str = str.replace(new RegExp(i, "g"), numbers[i]);
+	}
+	return str;
+};
+/**
+ *
+ * @param  {String|Number} number Định dạng 1 string, number về dạng tiền tệ
+ * @return {String}               Tiền tệ
+ * @example
+ * kb2abot.utils.currencyFormat(1234567);
+ * // "1,234,567"
+ */
+const currencyFormat = function(number) {
+	return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+};
+/**
+ * Lấy dữ liệu của tin nhắn câu lệnh
+ * @param  {String} text Lệnh người dùng nhập
+ * @return {String}      1 text với keyword đã bị bỏ
+ * @example
+ * kb2abot.utils.slicePluginName("/help hello, good morning!");
+ * // "hello, good morning!"
+ */
+const slicePluginName = text => {
+	return text
+		.split(" ")
+		.slice(1)
+		.join(" ");
+};
+/**
+ * Handler cho facebook-chat-api khi bị lỗi gửi tin nhắn
+ * @param  {} api     API của facebook-chat-api
+ * @param  {} message message trong callback của api.listen
+ * @param  {} err     err trong callback của api.sendMessage
+ */
+const apiErrorHandler = (api, mssg, err) => {
+	if (err) {
+		const replyMsg = `Đã gặp lỗi "${err.errorDescription}" khi đang gửi tin nhắn`;
+		api.sendMessage(replyMsg, mssg.threadID);
+	}
+};
+/**
+ * Loại bỏ các kí tự lạ trong văn bản
+ * @param  {String} text Văn bản nào đó
+ * @return {String}      Văn bản sạch
+ */
+const removeSpecialChar = function(str) {
+	if (str === null || str === "") return false;
+	else str = str.toString();
+
+	return str.replace(/[^\x20-\x7E]/g, "");
+	// return str;
+};
+
+module.exports = {
+	round,
+	extend,
+	subname,
+	parseArg,
+	parseBool,
+	parseJSON,
+	asyncWait,
+	deleteFile,
+	parseValue,
+	getKeyword,
+	getFileSize,
+	numbersToWords,
+	currencyFormat,
+	slicePluginName,
+	apiErrorHandler,
+	removeSpecialChar
+};
+</code></pre>
+  </article>
+</section>
+
+    
+
+
+  </div>
+
+  <br class="clear">
+
+  <footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.6</a>
+  </footer>
+
+  <script src="scripts/linenumber.js"></script>
+  <script src="scripts/pagelocation.js"></script>
+
+  
+
+</body>
+</html>
