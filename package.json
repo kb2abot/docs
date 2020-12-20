@@ -7,7 +7,7 @@
     "doc": "docs"
   },
   "scripts": {
-    "start": "jsdoc C:/Users/khoakomlem/Desktop/kb2abot/main -c jsdoc.json"
+    "start": "jsdoc C:/Users/khoakomlem/Desktop/kb2abot/main/utils -c jsdoc.json"
   },
   "repository": {
     "type": "git",

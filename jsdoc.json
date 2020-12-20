@@ -20,7 +20,10 @@
   "templates": {
         "referenceTitle": "KB2A BOT",
         "disableSort": false,
-        "collapse": true
+        "collapse": true,
+        "resources": {
+            "Cài đặt kb2abot": "index.html"
+        }
     },
   "footerText": "Made with ♥ by khoakomlem"
 }
