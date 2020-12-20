@@ -14,6 +14,11 @@ pkg install nodejs
 pkg install git
 ```
 ## CÀI ĐẶT
+**Mount tới thư mục kb2abot nhé**
+```
+cd kb2abot
+```
+Rồi sau đó:
 ```
 npm install
 ```

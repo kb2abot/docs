@@ -130,7 +130,6 @@ const load = () => {
 				Object.assign(member.storage, memberStorage);
 			}
 		}
-		console.log("Loaded datastore!");
 	} catch (e) {
 		if (e.code != "ENOENT") console.log(e);
 	}
@@ -160,7 +159,6 @@ const save = () => {
 			value == "[Circular]" ? undefined : value
 		);
 		fs.writeFileSync(`datastores/${kb2abot.id}.json`, save);
-		console.log("Saved datastore!");
 	} catch (e) {
 		console.log(e);
 	}
